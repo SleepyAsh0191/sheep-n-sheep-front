@@ -10018,7 +10018,7 @@ window.__require = function t(e, o, n) {
                 }, {
                     easing: cc.easing.cubicOut
                 }).call(function() {}, this).delay(.1).call(function() {
-                    t.showPopData && 2 == t.showPopData.failType ? t.showRestartNode() : m.default.getInstance().sheepMark.resurgenceCount >= 1 ? t.showRestartNode() : t.showPropPop(4)
+                    t.showPopData && 2 == t.showPopData.failType ? t.showPropPop(4) : m.default.getInstance().sheepMark.resurgenceCount >= 1 ? t.showPropPop(4) : t.showPropPop(4)
                 }).start()
             }
             ,
@@ -12530,7 +12530,7 @@ window.__require = function t(e, o, n) {
             ,
             e.prototype.freePropBtnFunc = function() {
                 console.log("beginBtnFunc ### unLimitVideo = " + h.default.getInstance().unLimitVideo),
-                4 == this.showPopData.popType && h.default.getInstance().sheepMark.resurgenceCount >= 1 ? cc.game.emit(u.EMITKEY.SHOWMAINTIPS, "\u65e0\u590d\u6d3b\u673a\u4f1a") : (this.showPopData && this.showPopData.popCallbackCollect && this.showPopData.popCallbackCollect.freeCallBack(this.showPopData.popType),
+                4 == this.showPopData.popType && false ? cc.game.emit(u.EMITKEY.SHOWMAINTIPS, "\u65e0\u590d\u6d3b\u673a\u4f1a") : (this.showPopData && this.showPopData.popCallbackCollect && this.showPopData.popCallbackCollect.freeCallBack(this.showPopData.popType),
                 this.updateWxUI())
             }
             ,
